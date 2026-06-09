@@ -18,164 +18,223 @@
 <body>
 
 <!-- ===== NAV ===== -->
-<header class="nav">
+<header class="nav" id="top">
   <a href="#top" class="brand">
     <img class="logo-mark" src="images/favicon.svg" alt="Star Washateria logo">
     STAR <span class="brand-star">★</span> <span class="brand-sub">WASHATERIA</span>
   </a>
+  <input type="checkbox" id="navtoggle" class="nav-toggle">
+  <label for="navtoggle" class="nav-burger" aria-label="Toggle menu"><span></span><span></span><span></span></label>
   <nav class="nav-links">
+    <a href="#why">Why Us</a>
+    <a href="#how">How It Works</a>
     <a href="#services">Services</a>
     <a href="#specials">Specials</a>
-    <a href="#amenities">Why Us</a>
     <a href="#visit">Visit</a>
   </nav>
-  <a class="nav-cta" href="https://www.google.com/maps/dir/?api=1&destination=Star+Washateria+9826+W+Bellfort+Ave+Houston+TX+77071" target="_blank" rel="noopener">Get Directions</a>
+  <a class="nav-cta" href="tel:+13464409180">Call Now</a>
 </header>
 
 <!-- ===== HERO ===== -->
-<section class="hero" id="top">
-  <img class="hero-bg" src="images/img9.png" alt="Star Washateria storefront on W Bellfort Ave, Houston">
-  <div class="hero-inner">
-    <p class="eyebrow">Houston · Brays Oaks · Est. 2023</p>
-    <h1>Houston's cleanest &amp; most <em>comfortable</em> washateria.</h1>
-    <p class="hero-lede">Brand-new Speed Queen machines, fresh A/C, free WiFi &amp; TV, and a comfy lounge. Self-serve, drop off your wash &amp; fold, or let us pick up and deliver — laundry day, done right.</p>
-    <div class="hero-actions">
-      <a class="btn btn-primary" href="https://www.google.com/maps/dir/?api=1&destination=Star+Washateria+9826+W+Bellfort+Ave+Houston+TX+77071" target="_blank" rel="noopener">Get Directions →</a>
-      <a class="btn btn-ghost" href="tel:+13464409180">Call (346) 440-9180</a>
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">Houston · Brays Oaks · Est. 2023</p>
+      <h1>Houston's cleanest &amp; most <em>comfortable</em> washateria.</h1>
+      <p class="hero-lede">Brand-new Speed Queen machines, fresh A/C, free WiFi &amp; TV, and a comfy lounge. Self-serve, drop off your wash &amp; fold, or let us pick up and deliver.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="https://www.google.com/maps/dir/?api=1&destination=Star+Washateria+9826+W+Bellfort+Ave+Houston+TX+77071" target="_blank" rel="noopener">Get Directions →</a>
+        <a class="btn btn-dark" href="tel:+13464409180">Call (346) 440-9180</a>
+      </div>
+      <div class="hero-trust">
+        <span class="stars">★★★★★</span><span>Loved by the neighborhood</span>
+        <span class="dot">•</span><span>Open 7 days · 6AM–10PM</span>
+      </div>
     </div>
-    <div class="hero-strip">
-      <span>Open 7 Days · 6AM–10PM</span><span class="dot">•</span>
-      <span>Free WiFi, A/C &amp; TV</span><span class="dot">•</span>
-      <span>Coin &amp; Coinless</span><span class="dot">•</span>
-      <span>Se Habla Español</span>
+    <div class="hero-media">
+      <img src="images/img9.png" alt="Star Washateria storefront on W Bellfort Ave, Houston">
+      <div class="hero-badge">Open Daily<span>6AM – 10PM</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY US ===== -->
+<section class="section" id="why">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Why Star Washateria</p>
+      <h2>A better laundry day</h2>
+      <p class="section-note">A safe, family-friendly space where cleanliness always comes first — from weekly bulk loads to your most delicate dry cleaning.</p>
+    </div>
+    <div class="feature-grid">
+      <div class="feature">
+        <div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2" stroke-linecap="round"/></svg></div>
+        <h3>Open 7 Days</h3>
+        <p>Every day, 6AM to 10PM — laundry on your schedule, not ours.</p>
+      </div>
+      <div class="feature">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3l2.2 5.6L20 9.2l-4.4 3.6L17 19l-5-3.2L7 19l1.4-6.2L4 9.2l5.8-.6z" stroke-linejoin="round"/></svg></div>
+        <h3>Clean &amp; Comfortable</h3>
+        <p>Fresh A/C, a comfy lounge, free WiFi &amp; TV while you wait.</p>
+      </div>
+      <div class="feature">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 9h16M7 9V6a2 2 0 012-2h6a2 2 0 012 2v3M6 9l1 11h10l1-11" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Weekly Specials</h3>
+        <p>Early-bird discounts, $1 dryers, free detergent and giveaways.</p>
+      </div>
+      <div class="feature">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M3 7h11v8H3zM14 10h4l3 3v2h-7zM7 18a1.6 1.6 0 100-3.2A1.6 1.6 0 007 18zM17.5 18a1.6 1.6 0 100-3.2 1.6 1.6 0 000 3.2z" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Pickup &amp; Delivery</h3>
+        <p>We collect, wash, fold and deliver — right to your door.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== HOW IT WORKS ===== -->
+<section class="section mist" id="how">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">How it works</p>
+      <h2>Drop off. Relax. Done.</h2>
+      <p class="section-note">Skip the chore. Our wash &amp; fold and delivery make laundry effortless.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <h3>Drop off or schedule</h3>
+        <p>Bring your laundry in, or book a free pickup from your door.</p>
+      </div>
+      <div class="step">
+        <h3>We wash, dry &amp; fold</h3>
+        <p>Our team cleans everything with premium detergents and folds it neatly.</p>
+      </div>
+      <div class="step">
+        <h3>Fresh &amp; ready</h3>
+        <p>Pick it up or we deliver it back — clean, folded, and ready to wear.</p>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- ===== SERVICES ===== -->
-<section class="services" id="services">
-  <div class="section-head">
-    <p class="eyebrow">What we do</p>
-    <h2>Four ways to get it clean</h2>
-  </div>
-  <div class="service-grid">
-    <article class="card">
-      <div class="card-num">01</div>
-      <h3>Self-Service</h3>
-      <p>High-efficiency Speed Queen washers &amp; dryers in every size — from quick loads to comforters. Coin and coinless payment, guaranteed dry.</p>
-    </article>
-    <article class="card">
-      <div class="card-num">02</div>
-      <h3>Wash &amp; Fold</h3>
-      <p>Drop it off and walk away. We sort, wash, dry, and neatly fold your laundry with premium detergents — fresh and ready for pickup.</p>
-    </article>
-    <article class="card">
-      <div class="card-num">03</div>
-      <h3>Dry Cleaning</h3>
-      <p>From everyday shirts to your most delicate garments, our dry cleaning keeps your wardrobe crisp, fresh, and cared for.</p>
-    </article>
-    <article class="card">
-      <div class="card-num">04</div>
-      <h3>Pickup &amp; Delivery</h3>
-      <p>Too busy to come in? We pick up at your door and bring it back clean and folded. Set a recurring slot and forget about laundry.</p>
-    </article>
+<section class="section" id="services">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Our services</p>
+      <h2>Four ways to get it clean</h2>
+    </div>
+
+    <div class="svc">
+      <div class="svc-media"><img src="images/img2.png" alt="Rows of Speed Queen front-load washers and the payment center"></div>
+      <div class="svc-body">
+        <span class="svc-badge">Do it yourself</span>
+        <h3>Self-Service</h3>
+        <p>High-efficiency Speed Queen washers and dryers in every size — from quick loads to king comforters.</p>
+        <ul class="svc-list">
+          <li><span class="tick">✓</span> Coin &amp; coinless payment</li>
+          <li><span class="tick">✓</span> Guaranteed dry</li>
+          <li><span class="tick">✓</span> Plenty of folding space</li>
+        </ul>
+        <a class="btn btn-primary" href="https://www.google.com/maps/dir/?api=1&destination=Star+Washateria+9826+W+Bellfort+Ave+Houston+TX+77071" target="_blank" rel="noopener">Get Directions →</a>
+      </div>
+    </div>
+
+    <div class="svc reverse">
+      <div class="svc-media"><img src="images/img6.png" alt="Wash, dry and fold area inside Star Washateria"></div>
+      <div class="svc-body">
+        <span class="svc-badge">Most popular</span>
+        <h3>Wash &amp; Fold</h3>
+        <p>Drop it off and walk away. We sort, wash, dry, and neatly fold your laundry with premium detergents.</p>
+        <ul class="svc-list">
+          <li><span class="tick">✓</span> Priced by the pound</li>
+          <li><span class="tick">✓</span> Fresh &amp; neatly folded</li>
+          <li><span class="tick">✓</span> 50% off every weekend</li>
+        </ul>
+        <a class="btn btn-primary" href="tel:+13464409180">Call to Drop Off</a>
+      </div>
+    </div>
+
+    <div class="svc">
+      <div class="svc-media"><img src="images/img4.png" alt="Customer service desk with laundry supplies and friendly staff"></div>
+      <div class="svc-body">
+        <span class="svc-badge">Premium care</span>
+        <h3>Dry Cleaning</h3>
+        <p>From everyday shirts to your most delicate garments, our dry cleaning keeps your wardrobe crisp and fresh.</p>
+        <ul class="svc-list">
+          <li><span class="tick">✓</span> Expert stain treatment</li>
+          <li><span class="tick">✓</span> Sharp, pressed finish</li>
+          <li><span class="tick">✓</span> Gentle on fabrics</li>
+        </ul>
+        <a class="btn btn-primary" href="tel:+13464409180">Ask About Dry Cleaning</a>
+      </div>
+    </div>
+
+    <div class="svc reverse">
+      <div class="svc-media"><img src="images/img1.png" alt="Large stainless-steel Speed Queen machines"></div>
+      <div class="svc-body">
+        <span class="svc-badge">Ultimate convenience</span>
+        <h3>Pickup &amp; Delivery</h3>
+        <p>Too busy to come in? We pick up at your door and bring it back clean and folded — on a schedule that works for you.</p>
+        <ul class="svc-list">
+          <li><span class="tick">✓</span> Free door-to-door service</li>
+          <li><span class="tick">✓</span> Set a recurring slot</li>
+          <li><span class="tick">✓</span> Contactless options</li>
+        </ul>
+        <a class="btn btn-primary" href="tel:+13464409180">Schedule a Pickup</a>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- ===== SPECIALS ===== -->
-<section class="specials" id="specials">
-  <div class="section-head">
-    <p class="eyebrow light">Weekly deals</p>
-    <h2>Our Specials</h2>
-    <p class="section-note">Say goodbye to laundry-day hassle. Enjoy fresh A/C, free WiFi &amp; TV, weekly giveaways, and deals all week long.</p>
-  </div>
-  <div class="special-grid">
-    <article class="special">
-      <span class="days">Mon–Fri</span>
-      <h3>Early Bird Special</h3>
-      <p>25% off all machines.</p>
-    </article>
-    <article class="special">
-      <span class="days">Mon–Tue</span>
-      <h3>Free Detergent</h3>
-      <p>On us, start to finish.</p>
-    </article>
-    <article class="special">
-      <span class="days">Wed–Fri</span>
-      <h3>$1 Dryers</h3>
-      <p>Dry up to 75 lbs for a buck.</p>
-    </article>
-    <article class="special">
-      <span class="days">Friday</span>
-      <h3>Free Breakfast</h3>
-      <p>Start your weekend with us.</p>
-    </article>
-    <article class="special">
-      <span class="days">Sat–Sun</span>
-      <h3>50% Off Wash &amp; Fold</h3>
-      <p>Half-price drop-off service.</p>
-    </article>
-  </div>
-  <div class="section-head" style="margin-top:2.6rem">
-    <a class="btn btn-light center-btn" href="tel:+13464409180">Call for Today's Rates</a>
-  </div>
-</section>
-
-<!-- ===== AMENITIES / WHY US ===== -->
-<section class="amenities" id="amenities">
-  <div class="amen-grid">
-    <div class="amen-text">
-      <p class="eyebrow">Why Star Washateria</p>
-      <h2 style="font-size:clamp(1.9rem,4.6vw,2.8rem);text-transform:uppercase;">A clean, comfortable place to do laundry</h2>
-      <p style="color:var(--gray);margin-top:1rem;max-width:48ch;">We pride ourselves on a safe, family-friendly environment where cleanliness always comes first — from your weekly bulk loads to your most delicate dry cleaning.</p>
-      <ul class="amen-list">
-        <li><span class="tick">✓</span> Brand-new Speed Queen machines</li>
-        <li><span class="tick">✓</span> Fresh air conditioning</li>
-        <li><span class="tick">✓</span> Free high-speed WiFi</li>
-        <li><span class="tick">✓</span> Free TV &amp; comfy lounge</li>
-        <li><span class="tick">✓</span> Coin &amp; coinless payment</li>
-        <li><span class="tick">✓</span> Laundry supplies on site</li>
-        <li><span class="tick">✓</span> Weekly giveaways</li>
-        <li><span class="tick">✓</span> Friendly, bilingual staff</li>
-      </ul>
+<section class="section dark" id="specials">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow light">Weekly deals</p>
+      <h2>Our Specials</h2>
+      <p class="section-note">Fresh A/C, free WiFi &amp; TV, weekly giveaways — plus a deal every day of the week.</p>
     </div>
-    <div class="amen-photos">
-      <img src="images/img7.png" alt="Comfortable lounge with sofas and TV at Star Washateria">
-      <img src="images/img4.png" alt="Friendly customer service desk and laundry supplies">
-      <img src="images/img6.png" alt="Spacious, clean interior with wash, dry and fold stations">
+    <div class="special-grid">
+      <article class="special"><span class="days">Mon–Fri</span><h3>Early Bird</h3><p>25% off all machines.</p></article>
+      <article class="special"><span class="days">Mon–Tue</span><h3>Free Detergent</h3><p>On us, start to finish.</p></article>
+      <article class="special"><span class="days">Wed–Fri</span><h3>$1 Dryers</h3><p>Up to 75 lbs for a buck.</p></article>
+      <article class="special"><span class="days">Friday</span><h3>Free Breakfast</h3><p>Start your weekend right.</p></article>
+      <article class="special"><span class="days">Sat–Sun</span><h3>50% Off W&amp;F</h3><p>Half-price wash &amp; fold.</p></article>
     </div>
   </div>
 </section>
 
 <!-- ===== GALLERY ===== -->
-<section class="gallery">
-  <div class="section-head">
-    <p class="eyebrow">Take a look</p>
-    <h2>Inside the wash</h2>
-  </div>
-  <div class="gallery-grid">
-    <img src="images/img1.png" alt="Rows of large stainless-steel Speed Queen dryers">
-    <img src="images/img2.png" alt="Front-load washers and payment center with detergent">
-    <img src="images/img8.png" alt="Stainless-steel washers and dryers in a bright aisle">
-    <img src="images/img5.png" alt="Dryers and white folding tables near restrooms and ATM">
-    <img src="images/img3.png" alt="Stacked Speed Queen dryers along the wall">
-    <img src="images/img10.png" alt="Star Washateria storefront and parking lot">
+<section class="section mist">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Take a look</p>
+      <h2>Inside the wash</h2>
+    </div>
+    <div class="gallery-grid">
+      <img src="images/img1.png" alt="Rows of large stainless-steel Speed Queen dryers">
+      <img src="images/img2.png" alt="Front-load washers and payment center with detergent">
+      <img src="images/img8.png" alt="Stainless-steel washers and dryers in a bright aisle">
+      <img src="images/img5.png" alt="Dryers and white folding tables near restrooms and ATM">
+      <img src="images/img7.png" alt="Comfortable lounge with sofas and TV">
+      <img src="images/img10.png" alt="Star Washateria storefront and parking lot">
+    </div>
   </div>
 </section>
 
-<!-- ===== DELIVERY BANNER ===== -->
-<section class="delivery" id="delivery">
-  <div class="delivery-inner">
+<!-- ===== CTA BANNER ===== -->
+<section class="section cta-banner" id="delivery">
+  <div class="container inner">
     <p class="eyebrow light">Pickup &amp; Delivery</p>
     <h2>Laundry, off your to-do list.</h2>
-    <p>We pick up, wash, fold, and deliver — on a schedule that works for you. Perfect for busy households and businesses across the Houston area.</p>
+    <p>We pick up, wash, fold, and deliver — on a schedule that works for you. Perfect for busy households and businesses across Houston.</p>
     <a class="btn btn-light" href="tel:+13464409180">Schedule a Pickup</a>
   </div>
 </section>
 
 <!-- ===== VISIT ===== -->
-<section class="visit" id="visit">
-  <div class="visit-grid">
+<section class="section" id="visit">
+  <div class="container visit-grid">
     <div class="visit-info">
       <p class="eyebrow">Come see us</p>
       <h2>Visit Star Washateria</h2>
@@ -224,6 +283,15 @@
   </div>
   <p class="copyright">© 2026 Star Washateria. All rights reserved. · Est. 2023</p>
 </footer>
+
+<script>
+  // Close the mobile menu after tapping a nav link
+  document.querySelectorAll('.nav-links a').forEach(function (link) {
+    link.addEventListener('click', function () {
+      document.getElementById('navtoggle').checked = false;
+    });
+  });
+</script>
 
 </body>
 </html>

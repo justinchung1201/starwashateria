@@ -4,3 +4,7 @@
 # Editor
 .vscode/
 .idea/
+
+# Local render/screenshot artifacts
+/mobile.png
+/desktop.png
