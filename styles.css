@@ -22,6 +22,7 @@
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { max-width: 100%; overflow-x: hidden; }
 html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
 body {
   font-family: 'Archivo', system-ui, -apple-system, sans-serif;
@@ -29,8 +30,10 @@ body {
   background: var(--paper);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
 }
+/* never let media or words force the page wider than the screen */
+img, svg, video { max-width: 100%; height: auto; }
+h1, h2, h3, h4, p, a, li { overflow-wrap: break-word; }
 h1, h2, h3, h4 { font-family: 'Archivo', system-ui, sans-serif; line-height: 1.07; font-weight: 800; letter-spacing: -.01em; }
 a { color: inherit; text-decoration: none; }
 img { display: block; max-width: 100%; }
@@ -277,8 +280,13 @@ img { display: block; max-width: 100%; }
 /* ===== SMALL PHONES (<480px) ===== */
 @media (max-width: 479.98px) {
   .brand-sub { display: none; }
-  .hero-actions .btn, .visit-actions .btn { width: 100%; }
+  .hero-actions .btn, .visit-actions .btn, .svc-body .btn { width: 100%; }
   .gallery-grid { grid-template-columns: 1fr 1fr; }
   .gallery-grid img { height: 130px; }
   .nav-cta { padding: .55rem .9rem; font-size: .82rem; }
+  .container { padding: 0 1.1rem; }
+  /* keep decorative stars from looking like giant icons on phones */
+  .cta-banner::after { font-size: 7rem; right: -.5rem; bottom: -1.5rem; }
+  .special::before { font-size: 2.6rem; }
+  .hero-badge { left: 0; }
 }
