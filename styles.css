@@ -205,7 +205,18 @@ img { display: block; max-width: 100%; }
 }
 
 /* ===== REVIEWS ===== */
-.review-grid { display: grid; grid-template-columns: 1fr; gap: 1.1rem; }
+.rating-band {
+  display: grid; grid-template-columns: 1fr; gap: 1.6rem; align-items: center;
+  background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: clamp(1.6rem, 5vw, 2.6rem); box-shadow: var(--shadow-soft); max-width: 880px; margin: 0 auto;
+}
+.rating-score { text-align: center; display: flex; flex-direction: column; align-items: center; gap: .25rem; }
+.rating-score .num { font-size: 3.4rem; font-weight: 900; line-height: 1; }
+.rating-score .rstars { color: var(--red); font-size: 1.3rem; letter-spacing: .12em; }
+.rating-score .lbl { color: var(--gray); font-size: .85rem; font-weight: 600; }
+.rating-cta { text-align: center; }
+.rating-cta p { color: var(--gray); margin-bottom: 1.2rem; }
+.review-grid { display: grid; grid-template-columns: 1fr; gap: 1.1rem; margin-top: 1.6rem; }
 .review {
   background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius);
   padding: 1.7rem 1.6rem; box-shadow: var(--shadow-soft);
@@ -277,6 +288,9 @@ img { display: block; max-width: 100%; }
   .feature-grid { grid-template-columns: 1fr 1fr; }
   .special-grid { grid-template-columns: 1fr 1fr; }
   .review-grid { grid-template-columns: repeat(3, 1fr); }
+  .rating-band { grid-template-columns: auto 1fr; gap: 2.6rem; }
+  .rating-score { border-right: 1px solid var(--line); padding-right: 2.6rem; }
+  .rating-cta { text-align: left; }
   .gallery-grid { grid-template-columns: repeat(3, 1fr); gap: 1rem; }
   .gallery-grid img { height: 200px; }
   .steps { grid-template-columns: repeat(3, 1fr); }
