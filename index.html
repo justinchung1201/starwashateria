@@ -8,12 +8,58 @@
 <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 <meta property="og:title" content="Star Washateria — Houston's Cleanest & Most Comfortable Laundromat">
 <meta property="og:description" content="Brand-new Speed Queen machines, A/C, free WiFi & TV, and weekly specials. Open 7 days, 6AM–10PM.">
-<meta property="og:image" content="images/img9.png">
+<meta property="og:image" content="images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=3">
+<link rel="stylesheet" href="styles.css?v=4">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "DryCleaningOrLaundry",
+  "name": "Star Washateria",
+  "image": "https://justinchung1201.github.io/starwashateria/images/og-image.jpg",
+  "url": "https://justinchung1201.github.io/starwashateria/",
+  "telephone": "+1-346-440-9180",
+  "priceRange": "$$",
+  "foundingDate": "2023",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "9826 W Bellfort Ave",
+    "addressLocality": "Houston",
+    "addressRegion": "TX",
+    "postalCode": "77071",
+    "addressCountry": "US"
+  },
+  "areaServed": "Houston, TX and surrounding areas",
+  "paymentAccepted": "Cash, Credit Card, Coin, Coinless",
+  "hasMap": "https://www.google.com/maps/search/?api=1&query=Star+Washateria+9826+W+Bellfort+Ave+Houston+TX+77071",
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "06:00",
+    "closes": "22:00"
+  }]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "What are your hours?", "acceptedAnswer": {"@type": "Answer", "text": "We are open 7 days a week, 6:00 AM to 10:00 PM."}},
+    {"@type": "Question", "name": "What size washers and dryers do you have?", "acceptedAnswer": {"@type": "Answer", "text": "We have brand-new, high-efficiency Speed Queen washers and dryers in every size — from small everyday loads up to large machines that easily handle comforters and bulky bedding."}},
+    {"@type": "Question", "name": "How does pricing work?", "acceptedAnswer": {"@type": "Answer", "text": "Self-service machines are priced by capacity, and wash & fold and pickup & delivery are priced by the pound. Call us at (346) 440-9180 for today's exact rates, and ask about our weekly specials."}},
+    {"@type": "Question", "name": "Do you offer pickup and delivery?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We offer free pickup and delivery across the Houston area. Schedule online and we collect, wash, fold, and return your laundry on a schedule that works for you."}},
+    {"@type": "Question", "name": "What payment methods do you accept?", "acceptedAnswer": {"@type": "Answer", "text": "Our machines accept both coin and coinless (card) payment, so you can pay however is most convenient."}},
+    {"@type": "Question", "name": "What amenities are available while I wait?", "acceptedAnswer": {"@type": "Answer", "text": "Fresh air conditioning, free high-speed WiFi, free TV, a comfortable lounge, on-site laundry supplies, and friendly, bilingual staff."}}
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -26,10 +72,10 @@
   <input type="checkbox" id="navtoggle" class="nav-toggle">
   <label for="navtoggle" class="nav-burger" aria-label="Toggle menu"><span></span><span></span><span></span></label>
   <nav class="nav-links">
-    <a href="#why">Why Us</a>
-    <a href="#how">How It Works</a>
     <a href="#services">Services</a>
     <a href="#specials">Specials</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#faq">FAQ</a>
     <a href="#visit">Visit</a>
   </nav>
   <a class="nav-cta" href="tel:+13464409180">Call Now</a>
@@ -44,11 +90,11 @@
       <p class="hero-lede">Brand-new Speed Queen machines, fresh A/C, free WiFi &amp; TV, and a comfy lounge. Self-serve, drop off your wash &amp; fold, or let us pick up and deliver.</p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="https://www.google.com/maps/dir/?api=1&destination=Star+Washateria+9826+W+Bellfort+Ave+Houston+TX+77071" target="_blank" rel="noopener">Get Directions →</a>
-        <a class="btn btn-dark" href="tel:+13464409180">Call (346) 440-9180</a>
+        <a class="btn btn-dark" href="https://app.trycents.com/new-order/OXo1/home?_gl=1*d596z6*_gcl_au*MTY0NDIwNzIxMC4xNzc4NjA2ODkz*_ga*MTUwOTU3OTEyNS4xNzc4NjA2ODkz*_ga_L6LQ5H9STV*czE3ODA5ODMxODIkbzUkZzEkdDE3ODA5ODMxODYkajU2JGwwJGgw" target="_blank" rel="noopener">Schedule Pickup →</a>
       </div>
+      <p class="hero-note">Free pickup &amp; delivery across the Houston area · or call <a href="tel:+13464409180">(346) 440-9180</a></p>
       <div class="hero-trust">
-        <span class="stars">★★★★★</span><span>Loved by the neighborhood</span>
-        <span class="dot">•</span><span>Open 7 days · 6AM–10PM</span>
+        <span class="stars">★★★★★</span><span>4.8 on Google · Loved by the neighborhood</span>
       </div>
     </div>
     <div class="hero-media">
@@ -197,8 +243,8 @@
     <div class="special-grid">
       <article class="special"><span class="days">Mon–Fri</span><h3>Early Bird</h3><p>25% off all machines.</p></article>
       <article class="special"><span class="days">Mon–Tue</span><h3>Free Detergent</h3><p>On us, start to finish.</p></article>
-      <article class="special"><span class="days">Wed–Fri</span><h3>$1 Dryers</h3><p>Up to 75 lbs for a buck.</p></article>
-      <article class="special"><span class="days">Friday</span><h3>Free Breakfast</h3><p>Start your weekend right.</p></article>
+      <article class="special feat"><span class="tag">Best deal</span><span class="days">Wed–Fri</span><h3>$1 Dryers</h3><p>Dry up to 75 lbs for a single dollar.</p></article>
+      <article class="special feat"><span class="tag">Fan favorite</span><span class="days">Friday</span><h3>Free Breakfast</h3><p>Free breakfast on us — every Friday.</p></article>
       <article class="special"><span class="days">Sat–Sun</span><h3>50% Off W&amp;F</h3><p>Half-price wash &amp; fold.</p></article>
     </div>
   </div>
@@ -222,6 +268,39 @@
   </div>
 </section>
 
+<!-- ===== REVIEWS =====
+     PLACEHOLDER REVIEWS — replace the quotes and names below with real
+     Google reviews from your listing. Keep them honest and verbatim. -->
+<section class="section" id="reviews">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Reviews</p>
+      <h2>Loved by the neighborhood</h2>
+      <p class="section-note">Rated 4.8★ on Google. Here's what Houston says about laundry day at Star Washateria.</p>
+    </div>
+    <div class="review-grid">
+      <figure class="review">
+        <div class="rstars">★★★★★</div>
+        <blockquote>"Cleanest laundromat I've been to in Houston. New machines, ice-cold A/C, and the wash &amp; fold always comes back perfectly folded."</blockquote>
+        <figcaption>— Add a real Google review here</figcaption>
+      </figure>
+      <figure class="review">
+        <div class="rstars">★★★★★</div>
+        <blockquote>"Big dryers, fast wash, and the $1 dryer special mid-week is unbeatable. Staff is super friendly and helpful too."</blockquote>
+        <figcaption>— Add a real Google review here</figcaption>
+      </figure>
+      <figure class="review">
+        <div class="rstars">★★★★★</div>
+        <blockquote>"I use the pickup &amp; delivery every week now. So convenient and my clothes come back fresh and neatly folded. Highly recommend."</blockquote>
+        <figcaption>— Add a real Google review here</figcaption>
+      </figure>
+    </div>
+    <div class="section-head" style="margin:2.4rem auto 0">
+      <a class="btn btn-dark" href="https://www.google.com/maps/search/?api=1&query=Star+Washateria+9826+W+Bellfort+Ave+Houston+TX+77071" target="_blank" rel="noopener">Read &amp; leave a review on Google →</a>
+    </div>
+  </div>
+</section>
+
 <!-- ===== CTA BANNER ===== -->
 <section class="section cta-banner" id="delivery">
   <div class="container inner">
@@ -229,6 +308,40 @@
     <h2>Laundry, off your to-do list.</h2>
     <p>We pick up, wash, fold, and deliver — on a schedule that works for you. Perfect for busy households and businesses across Houston.</p>
     <a class="btn btn-light" href="https://app.trycents.com/new-order/OXo1/home?_gl=1*d596z6*_gcl_au*MTY0NDIwNzIxMC4xNzc4NjA2ODkz*_ga*MTUwOTU3OTEyNS4xNzc4NjA2ODkz*_ga_L6LQ5H9STV*czE3ODA5ODMxODIkbzUkZzEkdDE3ODA5ODMxODYkajU2JGwwJGgw" target="_blank" rel="noopener">Schedule a Pickup</a>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="section mist" id="faq">
+  <div class="container faq-wrap">
+    <div class="section-head">
+      <p class="eyebrow">Good to know</p>
+      <h2>Frequently asked questions</h2>
+    </div>
+    <details class="faq">
+      <summary>What are your hours?</summary>
+      <p>We're open 7 days a week, 6:00 AM to 10:00 PM.</p>
+    </details>
+    <details class="faq">
+      <summary>What size washers and dryers do you have?</summary>
+      <p>Brand-new, high-efficiency Speed Queen washers and dryers in every size — from small everyday loads up to large machines that easily handle comforters and bulky bedding.</p>
+    </details>
+    <details class="faq">
+      <summary>How does pricing work?</summary>
+      <p>Self-service machines are priced by capacity; wash &amp; fold and pickup &amp; delivery are priced by the pound. Call <a href="tel:+13464409180">(346) 440-9180</a> for today's exact rates — and don't forget our weekly specials.</p>
+    </details>
+    <details class="faq">
+      <summary>Do you offer pickup &amp; delivery? What area do you cover?</summary>
+      <p>Yes — free pickup and delivery across the Houston area. <a href="https://app.trycents.com/new-order/OXo1/home" target="_blank" rel="noopener">Schedule online</a> and we'll collect, wash, fold, and return your laundry on your schedule.</p>
+    </details>
+    <details class="faq">
+      <summary>What payment methods do you accept?</summary>
+      <p>Our machines accept both coin and coinless (card) payment, so you can pay however is most convenient.</p>
+    </details>
+    <details class="faq">
+      <summary>What's available while I wait?</summary>
+      <p>Fresh A/C, free high-speed WiFi, free TV, a comfortable lounge, on-site laundry supplies, and friendly, bilingual staff.</p>
+    </details>
   </div>
 </section>
 
@@ -255,10 +368,12 @@
         <a class="btn btn-dark" href="tel:+13464409180">Call Us</a>
       </div>
     </div>
-    <a class="visit-photo" href="https://www.google.com/maps/dir/?api=1&destination=Star+Washateria+9826+W+Bellfort+Ave+Houston+TX+77071" target="_blank" rel="noopener" aria-label="Open directions to Star Washateria">
-      <img src="images/img10.png" alt="Star Washateria storefront at 9826 W Bellfort Ave">
-      <span class="map-tag"><span class="pin">★</span> 9826 W Bellfort Ave — Tap for directions</span>
-    </a>
+    <div class="visit-map">
+      <iframe
+        title="Map to Star Washateria, 9826 W Bellfort Ave, Houston, TX 77071"
+        src="https://www.google.com/maps?q=Star+Washateria,+9826+W+Bellfort+Ave,+Houston,+TX+77071&output=embed"
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+    </div>
   </div>
 </section>
 
@@ -268,19 +383,8 @@
     <img class="logo-mark" src="images/favicon.svg" alt="">
     STAR <span class="brand-star">★</span> WASHATERIA
   </div>
-  <p>9826 W Bellfort Ave, Houston, TX 77071 · (346) 440-9180</p>
+  <p>9826 W Bellfort Ave, Houston, TX 77071 · <a href="tel:+13464409180">(346) 440-9180</a></p>
   <p>Open daily 6AM–10PM · Self-Service · Wash &amp; Fold · Dry Cleaning · Delivery</p>
-  <div class="socials">
-    <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
-      <svg viewBox="0 0 24 24"><path d="M13.5 21v-7h2.4l.4-2.8h-2.8V9.4c0-.8.2-1.4 1.4-1.4h1.5V5.5C16.6 5.4 15.7 5.3 14.7 5.3c-2.1 0-3.6 1.3-3.6 3.7v2.2H8.5V14h2.6v7h2.4z"/></svg>
-    </a>
-    <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
-      <svg viewBox="0 0 24 24"><path d="M12 7.2A4.8 4.8 0 1 0 16.8 12 4.81 4.81 0 0 0 12 7.2zm0 7.9A3.1 3.1 0 1 1 15.1 12 3.1 3.1 0 0 1 12 15.1zm6.1-8.1a1.12 1.12 0 1 1-1.12-1.12A1.12 1.12 0 0 1 18.1 7zM21 7.05a5.54 5.54 0 0 0-1.51-3.92A5.58 5.58 0 0 0 15.57 1.6C14 1.51 9.96 1.51 8.43 1.6a5.57 5.57 0 0 0-3.92 1.51A5.56 5.56 0 0 0 3 7.03c-.09 1.54-.09 6.16 0 7.7a5.54 5.54 0 0 0 1.51 3.92 5.59 5.59 0 0 0 3.92 1.51c1.54.09 6.16.09 7.7 0a5.54 5.54 0 0 0 3.92-1.51 5.58 5.58 0 0 0 1.51-3.92c.09-1.54.09-6.15 0-7.68zM18.96 16.4a3.14 3.14 0 0 1-1.77 1.77c-1.22.49-4.13.38-5.49.38s-4.27.11-5.49-.38a3.14 3.14 0 0 1-1.77-1.77c-.49-1.22-.38-4.13-.38-5.49s-.11-4.27.38-5.49a3.14 3.14 0 0 1 1.77-1.77c1.22-.49 4.13-.38 5.49-.38s4.27-.11 5.49.38a3.14 3.14 0 0 1 1.77 1.77c.49 1.22.38 4.13.38 5.49s.11 4.27-.38 5.49z"/></svg>
-    </a>
-    <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="YouTube">
-      <svg viewBox="0 0 24 24"><path d="M23 7.5a3 3 0 0 0-2.1-2.1C19 4.9 12 4.9 12 4.9s-7 0-8.9.5A3 3 0 0 0 1 7.5 31 31 0 0 0 .6 12 31 31 0 0 0 1 16.5a3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .4-4.5 31 31 0 0 0-.4-4.5zM9.8 15.3V8.7l5.7 3.3z"/></svg>
-    </a>
-  </div>
   <p class="copyright">© 2026 Star Washateria. All rights reserved. · Est. 2023</p>
 </footer>
 
