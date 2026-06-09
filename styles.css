@@ -190,7 +190,7 @@ img { display: block; max-width: 100%; }
   display: inline-block; font-size: .7rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase;
   color: #fff; background: var(--red); padding: .3rem .7rem; border-radius: 100px; margin-bottom: .9rem;
 }
-.special h3 { font-size: 1.25rem; margin-bottom: .3rem; position: relative; }
+.special h3 { font-size: 1.25rem; margin-bottom: .3rem; position: relative; color: var(--ink); }
 .special p { color: var(--gray); font-size: .9rem; }
 /* featured / standout specials */
 .special.feat { background: var(--red); border-color: var(--red); box-shadow: 0 18px 40px -20px rgba(225,27,34,.6); }
